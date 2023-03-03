@@ -1,0 +1,155 @@
+@import url('https://fonts.cdnfonts.com/css/satoshi');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --blue-primary: #4f6fd8;
+    --blue-dark: #23409f;
+    --blue-icon: #60677d;
+    --blue-stroke: #dee4f8;
+    --background-ghost: #fafaff;
+}
+
+#root{
+    display: flex;
+    gap: 32px;
+}
+
+body {
+    margin: 0;
+    font-family: satoshi, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
+
+header {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: fit-content;
+    height: 100vh;
+    padding: 32px 24px;
+    padding-right: 56px;
+    gap: 56px;
+    background-color: var(--background-ghost);
+    border-right: 1px solid var(--blue-stroke);
+}
+
+.logo-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-weight: 800;
+    color: var(--blue-dark);
+}
+
+.logo-wrapper img {
+    width: 50px;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+header nav h3 {
+    font-weight: 800;
+    color: var(--blue-primary);
+    font-size: 16px;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-left: 12px;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
+    display: flex;
+    gap: 16px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--blue-primary);
+}
+
+header nav ul li svg.nav-icons {
+    width: 20px;
+    height: auto;
+    color: var(--blue-icon);
+}
+
+main{
+    display: flex;
+    padding: 32px 0;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 32px 16px;
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+form button{
+    background-color: blue;
+    color: #fff;
+    width: fit-content;
+    padding: 8px 32px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 32px;
+}
+form input{
+    width: 250px;
+}
+
+.pages-info{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.pages-info h2{
+    font-size: 2.5em;
+}
+
+.pages-info .info-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.pages-info .info-wrapper .info-container{
+    display: flex;
+    gap: 8px;
+}
+
+.info-container span{
+    font-weight: 800;
+    color: var(--blue-primary);
+}
+
+.info-container p{
+    font-weight: 400;
+}
